@@ -3,7 +3,7 @@
 [![NPM version](https://badgen.net/npm/v/vuepress-plugin-check-md)](https://npmjs.com/package/vuepress-plugin-check-md) [![NPM downloads](https://badgen.net/npm/dm/vuepress-plugin-check-md)](https://npmjs.com/package/vuepress-plugin-check-md)
 
 
-> `vuepress check-md` - Checks dead links of markdown.
+> `vuepress check-md` - Check dead links of markdown.
 
 **This plugin is powered by [check-md](https://github.com/whxaxes/check-md) made with ❤️ by [@whxaxes](https://github.com/whxaxes).**
 
