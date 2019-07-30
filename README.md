@@ -1,6 +1,6 @@
 # vuepress-plugin-check-md
 
-[![NPM version](https://badgen.net/npm/v/vuepress-plugin-check-md)](https://npmjs.com/package/vuepress-plugin-check-md) [![NPM downloads](https://badgen.net/npm/dm/vuepress-plugin-check-md)](https://npmjs.com/package/vuepress-plugin-check-md)
+[![NPM version](https://badgen.net/npm/v/vuepress-plugin-check-md)](https://npmjs.com/package/vuepress-plugin-check-md) [![NPM downloads](https://badgen.net/npm/dm/vuepress-plugin-check-md)](https://npmjs.com/package/vuepress-plugin-check-md) [![Greenkeeper badge](https://badges.greenkeeper.io/ulivz/vuepress-plugin-check-md.svg)](https://greenkeeper.io/)
 
 
 > `vuepress check-md` - Check dead links of markdown.
