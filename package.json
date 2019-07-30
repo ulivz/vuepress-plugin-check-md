@@ -18,7 +18,7 @@
   "author": "ulivz<chl814@foxmail.com>",
   "license": "MIT",
   "dependencies": {
-    "check-md": "latest"
+    "check-md": "1.0.0"
   },
   "devDependencies": {
     "xo": "0.23.0",
