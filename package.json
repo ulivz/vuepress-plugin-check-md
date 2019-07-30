@@ -21,10 +21,10 @@
     "check-md": "1.0.0"
   },
   "devDependencies": {
-    "xo": "0.23.0",
+    "xo": "0.24.0",
     "eslint-config-sherry": "0.0.1",
-    "jest": "24.0.0",
-    "vuepress": "1.0.0"
+    "jest": "24.8.0",
+    "vuepress": "1.0.3"
   },
   "jest": {
     "testEnvironment": "node"
