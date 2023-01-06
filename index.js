@@ -7,21 +7,23 @@ module.exports = (opts = {}) => {
       cli
         .command('check-md [targetDir]', 'Checks dead links of markdown.')
         .option('--fix', 'fix dead links like a expert.')
-        .option('--pattern', 'glob pattern of resolved markdowns.')
-        .option('--ignore', 'glob pattern to specify paths from being checked.')
-        .action((dir = '.') => {
+        .option('--pattern [pattern]', 'glob pattern of resolved markdowns.')
+        .option('--ignore [pattern]', 'glob pattern to specify paths from being checked.')
+        .option('--exit-level [level]', 'Process exit level, default to `error`.')
+        .action((dir = '.', cliOptions = {}) => {
           const cwd = dir
           const root = ['./', './.vuepress/public']
 
+          const finalOptions = { ...opts, ...cliOptions };
           checkAndThrow({
-            pattern: '**/*.md',
-            ignore: ['**/node_modules'],
+            pattern: finalOptions.pattern || '**/*.md',
+            ignore: finalOptions.ignore || ['**/node_modules'],
             exitLevel: 'error',
             root,
-            ...opts,
             defaultIndex: ['README.md', 'index.md'],
             slugify: compose(deeplyParseHeaders, slugify),
             cwd,
+            fix: finalOptions.fix || false
           })
         })
     }

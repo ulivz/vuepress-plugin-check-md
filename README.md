@@ -50,6 +50,15 @@ module.exports = {
 
 ## Options
 
+Following options can also be passed via CLI options, e.g. `vuepress check-md --fix`
+
+### fix
+
+- Type: `boolean`
+- Default: `false`
+
+Check and try to fix
+
 ### pattern
 
 - Type: `GlobPattern`
@@ -69,6 +78,7 @@ module.exports = {
 - Type: `'none' | 'info' | 'warn' | 'error'`
 - Default: `'error'`
 
+Process exit level, default to `error`, other choice is warn and none, it will not exit if setting to none.
 
 ## Author
 
